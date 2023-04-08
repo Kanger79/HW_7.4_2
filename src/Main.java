@@ -1,12 +1,12 @@
 public class Main {
     public static void main(String[] args) {
         BmiService service = new BmiService();
-        double h = 1.87;
-        double w = 98;
-        double i = service.calculate(h, w);
-        int index = (int)i ;
+        double height = 1.87;
+        double weight = 98;
+        double result = service.calculate(height, weight);
+        int index = (int) result;
 
-        System.out.println("Для человека, ростом " + h + "м, и весом " + w + "кг, индекс массы тела будет равен " + index);
+        System.out.println("Для человека, ростом " + height + "м, и весом " + weight + "кг, индекс массы тела будет равен " + index);
 
     }
 }
